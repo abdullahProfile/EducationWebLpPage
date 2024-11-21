@@ -153,6 +153,9 @@ body {
     top: 70px;
 		transition: all .3s ease-in-out;
 		z-index: 100;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 	}
 
 	.close-menu,.open-menu {
@@ -168,6 +171,13 @@ body {
   }
   .nav-bar {
     align-items: start;
+  }
+
+  .contact-cta {
+    font-weight: normal !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+    padding: 2px !important;
   }
 }
 
