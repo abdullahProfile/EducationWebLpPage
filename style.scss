@@ -67,6 +67,11 @@ body {
   font-size: $sm-font-size;
   color: $primary-font-color;
   font-weight: bold;
+  transition: all .3s ease-in;
+
+  &:hover {
+    color: #682C0E;
+  }
 }
 
 .contact-cta {
@@ -218,5 +223,138 @@ body {
   .hero-content__text {
     align-items: center;
     text-align: center;
+  }
+}
+
+.cards-content {
+  max-width: 1040px;
+  margin-inline: auto;
+  gap: 100px;
+}
+
+.card-one {
+    gap: 40px;
+}
+
+.card-one__image {
+  max-width: 480px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.card-one__text {
+  max-width: 430px;
+
+  h2 {
+    font-size: $lg-font-size;
+    color: $primary-font-color;
+    font-weight: bold;
+  }
+
+  ul {
+
+    li {
+      font-size: $md-font-size;
+      color: $primary-font-color;
+      margin-bottom: 10px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.card-two {
+  gap: 40px;
+
+  h2 {
+    font-size: $lg-font-size;
+    color: $primary-font-color;
+    font-weight: 600;
+    max-width: 530px;
+  }
+
+  .card-two__image {
+    max-width: 440px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width:992px) {
+
+  .cards-content {
+    padding-inline: 30px;
+  }
+
+  .card-one {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    .card-one__image {
+      width: 100%;
+    }
+  }
+
+  .card-two {
+    flex-direction: column;
+    text-align: center;
+
+    .card-two__image {
+      width: 100%;
+    }
+  }
+}
+
+.user-cta__form {
+  max-width: 1080px;
+  margin: 100px 0;
+  margin-inline: auto;
+  gap: 45px;
+  padding: 38px 45px;
+  background-color: $primary-bg-color;
+
+  input {
+    padding: 17px 51px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 300px;
+    border: 0;
+    font-size: $sm-font-size;
+    color: $secondary-font-color;
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: none;
+    max-width: 300px;
+    padding: 17px 94px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #C24914;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: #682C0E;
+    }
+  }
+}
+
+@media (max-width:992px) {
+  .user-cta__form {
+    flex-direction: column;
+    max-width: 100%;
+    padding-inline: 30px;
   }
 }
