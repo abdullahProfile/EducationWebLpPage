@@ -33,43 +33,35 @@ body {
   align-items: center;
 }
 
-.header nav {
+.nav-bar {
   max-width: 1440px;
   background-color: #F9E0AE;
   padding: 10px 40px;
   max-height: 100px;
   margin-inline: auto;
 }
-.header nav .nav-bar {
-  list-style: none;
-  overflow: hidden;
-}
-.header nav .nav-bar li {
-  position: relative;
-}
-.header nav .nav-bar .nav-bar ul li a {
-  text-decoration: none;
-}
-.header nav .nav-bar .nav-bar ul li a img {
-  width: 100%;
-}
-.header nav .nav-bar .menu {
+
+.menu {
   display: flex;
   position: relative;
   transition: all 0.3s ease-in;
   gap: 30px;
   align-items: center;
 }
-.header nav .nav-bar .menu li {
+
+.menu li {
   list-style: none;
+  position: relative;
 }
-.header nav .nav-bar .menu li a {
+
+.menu li a {
   text-decoration: none;
   font-size: 20px;
   color: #000;
   font-weight: bold;
 }
-.header nav .nav-bar .contact-cta {
+
+.contact-cta {
   padding: 5px 18px;
   background-color: #C24914;
   border-radius: 10px;
@@ -77,10 +69,11 @@ body {
   font-weight: bold;
   transition: all 0.3s ease-in;
 }
-.header nav .nav-bar .contact-cta:hover {
+.contact-cta:hover {
   background-color: #70412d;
 }
-.header nav .sub-menu {
+
+.sub-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -90,10 +83,12 @@ body {
   padding: 20px;
   z-index: 100;
 }
-.header nav .nav-bar li:hover .sub-menu {
+
+.nav-bar li:hover .sub-menu {
   display: block;
 }
-.header nav .sub-menu ul li a {
+
+.sub-menu ul li a {
   display: block;
   padding: 5px;
 }
@@ -123,18 +118,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 70%;
     height: 100%;
-    background-color: rgb(179, 178, 178);
+    background-color: rgb(80, 79, 79);
     box-shadow: 0 5px 3px 3px gray;
     position: fixed;
-    right: -100vw;
-    top: 70px;
+    right: -100%;
+    top: 85px;
     transition: all 0.3s ease-in-out;
     z-index: 100;
     padding: 0;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .menu li a {
+    color: #fff;
   }
   .close-menu, .open-menu {
     display: block;
@@ -147,12 +145,6 @@ body {
   }
   .nav-bar {
     align-items: start;
-  }
-  .contact-cta {
-    font-weight: normal !important;
-    font-size: 16px !important;
-    padding: 0 !important;
-    padding: 2px !important;
   }
 }
 .hero-content {
@@ -199,6 +191,7 @@ body {
   .hero-content {
     flex-direction: column;
     gap: 20px;
+    padding-inline: 20px;
   }
   .hero-content__text {
     align-items: center;
