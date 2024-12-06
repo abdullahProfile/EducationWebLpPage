@@ -47,6 +47,7 @@ body {
   transition: all 0.3s ease-in;
   gap: 30px;
   align-items: center;
+  list-style: none;
 }
 
 .menu li {
@@ -97,24 +98,13 @@ body {
   padding: 5px;
 }
 
-.close-menu, .open-menu {
-  position: absolute;
+.fas {
+  position: absolute !important;
   color: #c7c7c7;
   font-size: 40px;
   display: none;
-}
-
-.open-menu {
   right: 20px;
-}
-
-.close-menu {
-  top: 0;
-  right: 0;
-}
-
-#check {
-  display: none;
+  top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -128,24 +118,18 @@ body {
     box-shadow: 0 5px 3px 3px gray;
     position: fixed;
     right: -100%;
-    top: 85px;
-    transition: all 0.3s ease-in-out;
+    top: 0;
     z-index: 100;
     padding: 0;
+    display: none;
     padding-top: 40px;
     padding-bottom: 40px;
   }
   .menu li a {
     color: #fff;
   }
-  .close-menu, .open-menu {
+  .fas {
     display: block;
-  }
-  #check:checked ~ .menu {
-    right: 0;
-  }
-  #check:checked ~ .open-menu {
-    display: none;
   }
   .nav-bar {
     align-items: start;
@@ -313,5 +297,62 @@ body {
     flex-direction: column;
     max-width: 100%;
     padding-inline: 30px;
+  }
+}
+footer nav {
+  background: #F9E0AE;
+  padding-block: 107px;
+}
+footer nav p {
+  text-align: center;
+  color: #6C6C6C;
+}
+footer nav .footer-navbar__list {
+  gap: 78px;
+  display: flex;
+  margin-bottom: 124px;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+footer nav .footer-navbar__list li {
+  list-style: none;
+}
+footer nav .footer-navbar__list li a {
+  text-decoration: none;
+  color: #6C6C6C;
+}
+footer nav .footer-navbar__list li a:hover {
+  color: #fff;
+}
+footer nav .footer-navbar__list li .footer-navbar__list-content {
+  gap: 100px;
+}
+footer nav .footer-navbar__list li .footer-navbar__list-content .footer-navbar__list-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer nav .footer-navbar__list li .footer-navbar__list-content .footer-navbar__list-content__list .media-cta {
+  gap: 10px;
+}
+footer nav .footer-navbar__list li .footer-navbar__list-content .footer-navbar__list-content__list .list-heading {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer nav .footer-navbar__list li .footer-navbar__list-content .footer-navbar__list-content__list ul {
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 992px) {
+  .footer-navbar__list {
+    flex-direction: column;
+  }
+  .footer-navbar__list-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px !important;
   }
 }

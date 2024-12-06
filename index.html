@@ -12,9 +12,8 @@
     <nav class="nav-bar flex justify-content-btw align-item-center">
       <a href="#"><img src="./assets/images/logo.svg" alt="logo"></a>
       <ul class="nav-bar__list">
-        <input type="checkbox"  id="check">
 
-        <span class="menu">
+        <div class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Courses <img src="./assets/icons/icon.svg" alt="arrow"></a>
@@ -38,10 +37,10 @@
           </li>
           <li><a href="#" class="contact-cta">Contact Us</a></li>
 
-          <label for="check" class="close-menu"><li class="fas fa-times"></li></label>
-        </span>
+          <li class="fas fa-times"></li>
+        </div>
 
-        <label for="check" class="open-menu"><li class="fas fa-bars"></li></label>
+        <li class="fas fa-bars open-menu" onclick="openMenu()"></li>
       </ul>
     </nav>
   </header>
@@ -95,5 +94,50 @@
       <a href="#">SubScribe</a>
     </form>
   </section>
+
+  <footer>
+    <nav class="footer-navbar">
+      <ul class="footer-navbar__list flex align-item-center justify-content-around">
+        <li><a href="#"><img src="./assets/images/logo.svg" alt="logo"></a></li>
+  
+        <li>
+          <ul class="footer-navbar__list-content flex">
+            <li class="footer-navbar__list-content__list flex">
+              <span class="list-heading">Follow Us</span>
+              <ul class="media-cta flex align-item-center">
+                <li><a href="#"><img src="./assets/icons/Twitter.svg" alt="icon"></a></li>
+                <li><a href="#"><img src="./assets/icons/Linkedln.svg" alt="icon"></a></li>
+                <li><a href="#"><img src="./assets/icons/fa.svg" alt="icon"></a></li>
+                <li><a href="#"><img src="./assets/icons/instagram.svg" alt="icon"></a></li>
+              </ul>
+            </li>
+  
+            <li class="footer-navbar__list-content__list flex">
+              <span class="list-heading">UseFul Links</span>
+              <ul>
+                <li><a href="#">Our Projects</a></li>
+                <li><a href="#">FAQ’s</a></li>
+                <li><a href="#">News and Updates</a></li>
+              </ul>
+            </li>
+  
+            <li class="footer-navbar__list-content__list flex">
+              <span class="list-heading">Contacts</span>
+              <ul>
+                <li><a href="#">Address : 4-5 Main road , Delhi</a></li>
+                <li><a href="#">Email : educare@gmail.com</a></li>
+                <li><a href="#">Phone Number : +91 4533433265</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  
+      <p>&copy;All Copyrights reserved</p>
+    </nav>
+  </footer>
+  
+
+  <script src="./script.js"></script>
 </body>
 </html>
